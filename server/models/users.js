@@ -41,6 +41,8 @@ module.exports = (sequelize, DataTypes) => {
       }
     });
   
+
+
     Users.associate = (models) => {
       Users.belongsTo(models.Companies, {
         foreignKey: "companyId",
