@@ -6,7 +6,7 @@ const app = express();
 app.use(cors({
     origin: 'http://localhost:3000', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-    credentials: true, // Allow cookies or authenticatio headers(for authetication) 
+    credentials: true, // Allow cookies or authenticatio headers
   }));
   
 app.use(express.json());
