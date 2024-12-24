@@ -12,7 +12,7 @@ app.use(cors({
 app.use(express.json());
 
 const port = 3001;
-const db = require("./models")
+const db = require("./models") // require("./models")
 
 const companiesRoutes = require('./routes/companies');
 const userRoutes = require("./routes/User")
