@@ -9,7 +9,7 @@ app.use(cors({
     credentials: true, // Allow cookies or authenticatio headers
   }));
   
-app.use(express.json());
+app.use(express.json()); // req.body
 
 const port = 3001;
 const db = require("./models") // require("./models")
