@@ -14,11 +14,11 @@ app.use(express.json());
 const port = 3001;
 const db = require("./models") 
 
-const companiesRoutes = require('./routes/companies'); // require("./routes/companies")
+const companiesRoutes = require('./routes/companies'); 
 const userRoutes = require("./routes/User") 
 
 
-app.use("/companies", companiesRoutes); //app.use is a middleware
+app.use("/companies", companiesRoutes); 
 app.use("/User", userRoutes);
 
 db.sequelize.sync().then(() => {
