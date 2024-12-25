@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 app.use(cors({
     origin: 'http://localhost:3000', 
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],  
     credentials: true, // Allow cookies or authenticatio headers
   }));
   
@@ -14,8 +14,8 @@ app.use(express.json());
 const port = 3001;
 const db = require("./models") // require("./models")
 
-const companiesRoutes = require('./routes/companies');
-const userRoutes = require("./routes/User")
+const companiesRoutes = require('./routes/companies'); // require("./routes/companies")
+const userRoutes = require("./routes/User") // require("./routes/User")
 
 
 app.use("/companies", companiesRoutes);
