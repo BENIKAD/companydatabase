@@ -12,10 +12,10 @@ app.use(cors({
 app.use(express.json()); // req.body
 
 const port = 3001;
-const db = require("./models") // require("./models")
+const db = require("./models") 
 
 const companiesRoutes = require('./routes/companies'); // require("./routes/companies")
-const userRoutes = require("./routes/User") // require("./routes/User")
+const userRoutes = require("./routes/User") 
 
 
 app.use("/companies", companiesRoutes);
