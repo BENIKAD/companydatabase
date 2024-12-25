@@ -9,7 +9,7 @@ app.use(cors({
     credentials: true, // Allow cookies or authenticatio headers
   }));
   
-app.use(express.json()); // req.body
+app.use(express.json()); 
 
 const port = 3001;
 const db = require("./models") 
@@ -18,7 +18,7 @@ const companiesRoutes = require('./routes/companies'); // require("./routes/comp
 const userRoutes = require("./routes/User") 
 
 
-app.use("/companies", companiesRoutes);
+app.use("/companies", companiesRoutes); //app.use is a middleware
 app.use("/User", userRoutes);
 
 db.sequelize.sync().then(() => {
