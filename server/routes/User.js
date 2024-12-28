@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { Users } = require('../models');
-const bcrypt = require('bcryptjs');
-const logincontrolller = require('../controllers/logincontroller');
+const { Users } = require('../models'); //../models
+const bcrypt = require('bcryptjs'); //bcrypt
+const logincontrolller = require('../controllers/logincontroller'); //../controllers/logincontroller
 
 
 // Add a new user
