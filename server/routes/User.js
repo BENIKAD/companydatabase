@@ -81,11 +81,11 @@ router.get('/:id', async (req, res) => {
 
 // Update a user
 router.put('/:id', async (req, res) => {
-  const { name, lastName, email, address, companyId } = req.body;
+  const { name, lastName, email, address, companyId } = req.body; // Destructure the request body
 
   try {
     const user = await Users.findByPk(req.params.id);
-    if (!user) return res.status(404).send('User not found');
+    if (!user) return res.status(404).send('User not found'); // User not found
 
     user.name = name;
     user.lastName = lastName;
