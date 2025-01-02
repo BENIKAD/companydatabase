@@ -13,7 +13,7 @@ app.use(express.json());
 
 const port = 3001;
 const db = require("./models") //./models
-const companiesRoutes = require('./routes/companies');  
+const companiesRoutes = require('./routes/companies');  //./routes
 const userRoutes = require("./routes/User")  
 
 app.use("/companies", companiesRoutes); 
