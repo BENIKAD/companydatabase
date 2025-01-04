@@ -1,8 +1,8 @@
 const express = require("express"); //express
-const mysql = require("mysql2"); //mysql
+const mysql = require("mysql2"); 
 const cors = require("cors");
-const path = require("path"); //path
-const app = express(); //app
+const path = require("path"); 
+const app = express(); 
 app.use(cors({
     origin: 'http://localhost:3000', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],  
