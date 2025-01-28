@@ -14,7 +14,7 @@ app.use(express.json());
 const port = 3001;
 const db = require("./models") //./models
 const companiesRoutes = require('./routes/companies');  //./routes
-const userRoutes = require("./routes/User")  
+const userRoutes = require("./routes/User")  //./routes
 
 app.use("/companies", companiesRoutes); //http://localhost:3001/api/companies
 app.use("/User", userRoutes);
@@ -22,7 +22,7 @@ app.use("/User", userRoutes);
 db.sequelize.sync().then(() => {
     app.listen(port, () => {
        console.log(`listening on port ${port} `); //listening on port 3001
-       
+
    });
 });
 
