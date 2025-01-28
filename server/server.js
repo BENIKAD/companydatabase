@@ -16,12 +16,13 @@ const db = require("./models") //./models
 const companiesRoutes = require('./routes/companies');  //./routes
 const userRoutes = require("./routes/User")  
 
-app.use("/companies", companiesRoutes); 
+app.use("/companies", companiesRoutes); //http://localhost:3001/api/companies
 app.use("/User", userRoutes);
 
 db.sequelize.sync().then(() => {
     app.listen(port, () => {
-       console.log(`listening on port ${port} `);
+       console.log(`listening on port ${port} `); //listening on port 3001
+       
    });
 });
 
