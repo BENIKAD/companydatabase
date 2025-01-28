@@ -9,7 +9,7 @@ app.use(cors({
     credentials: true, // Allow cookies or authenticatio headers
   }));
   
-app.use(express.json()); 
+app.use(express.json()); //express json
 
 const port = 3001;
 const db = require("./models") //./models
@@ -21,7 +21,7 @@ app.use("/User", userRoutes);
 
 db.sequelize.sync().then(() => {
     app.listen(port, () => {
-       console.log(`listening on port ${port} `); //listening on port 3001
+       console.log(`listening on port ${port} `); //listening on port 300
 
    });
 });
